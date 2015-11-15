@@ -26,8 +26,7 @@ router.get('/', function(req, res) {
   	'api-status':'OK'
   }
 
-  // respond with json data
-  res.json(jsonData)
+  res.render('index.html')
 });
 
 router.get('/api/get/twitter/:user', function(req,res){
@@ -42,7 +41,7 @@ router.get('/api/get/twitter/:user', function(req,res){
     }
 
     console.log(tweets);
-    
+
     res.json(tweets);
   });  
 
