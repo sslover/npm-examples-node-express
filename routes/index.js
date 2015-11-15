@@ -43,6 +43,7 @@ router.get('/api/get/twitter/:user', function(req,res){
 
 })
 
+// get all boards for the given :account
 router.get('/api/get/pinterest/boards/:account', function(req,res){
 
   var requestedAccount = req.params.account;
@@ -59,6 +60,7 @@ router.get('/api/get/pinterest/boards/:account', function(req,res){
 
 })
 
+// get all pins for the given :account
 router.get('/api/get/pinterest/pins/:account', function(req,res){
 
   var requestedAccount = req.params.account;
@@ -75,6 +77,8 @@ router.get('/api/get/pinterest/pins/:account', function(req,res){
 
 })
 
+
+// get all pins for the board :board for the given :account
 router.get('/api/get/pinterest/pins/:account/board/:board', function(req,res){
 
   var requestedAccount = req.params.account;
